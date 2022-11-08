@@ -9,7 +9,7 @@ function cant(precio, corte) {
   if (cantidad > 0) {
     multi(cantidad, precio, corte);
   } else {
-    let cantidad = parseFloat(prompt("ingrese un numero positivo"));
+    alert("Ingrese un numero positivo");
     cant(precio, corte);
   }
 }
@@ -43,7 +43,7 @@ while (
   corte = prompt(
     "1 Vacio $1.400xkg " +
       "2 Costillas $800xkg " +
-      "3 Entraña $1.500xkg " +
+      "3 cuadrada $1.500xkg " +
       "4 Osobuco $700xkg " +
       "5 Carne molida $700xkg"
   );
@@ -55,7 +55,7 @@ while (
       cant(800, "costillas");
       break;
     case "3":
-      cant(1500, "entraña");
+      cant(1500, "cuadrada");
       break;
     case "4":
       cant(700, "osobuco");
@@ -68,6 +68,26 @@ while (
       break;
   }
 }
-
+class Cortes {
+  constructor(tipo, utilidad, precio) {
+    this.tipo = tipo;
+    this.utilidad = utilidad;
+    this.precio = precio;
+  }
+  mostrarUtilidad() {
+    console.log(this.utilidad);
+  }
+}
+const vacio = new Cortes("sin hueso", "asado", 1400);
+const costilla = new Cortes("con hueso", "asado", 800);
+const cuadrada = new Cortes("sin hueso", "bifes", 1500);
+const osobuco = new Cortes("con hueso", "olla", 700);
+const carneMolida = new Cortes("sin hueso", "hamburgesas", 700);
+console.log(vacio);
+console.log(costilla);
+console.log(cuadrada);
+console.log(osobuco);
+console.log(carneMolida);
+vacio.mostrarUtilidad();
 despedir();
 
