@@ -1,0 +1,33 @@
+.pageContacto{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 3%;
+    gap:3%;
+    justify-content: space-around;
+    .formasContacto{
+        border: solid 0.1rem black;
+        border-radius: 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+        &:hover{
+            background-color:#9E4A49 ;
+            transition: all 1s;
+        }
+    }
+    .formulario{
+        @extend .formasContacto;
+        text-align: start;
+        input{
+            width: 100%;
+            margin: 0.5rem;
+        }
+        textarea{
+            width: 100%;
+            margin: 0.5rem;
+        }
+    }
+    
+}

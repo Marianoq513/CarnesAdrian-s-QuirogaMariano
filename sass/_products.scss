@@ -1,0 +1,71 @@
+article.productos{
+    display: flex;
+    div.filtro{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background-color: #9E4A49; 
+        border: solid #D9A6A5;
+        margin: 1rem;
+        text-align: center;
+        padding: 0.5rem;
+        width: 20%;
+        height: 15rem;
+        position: sticky;
+        top: 1rem;
+        li{
+            background-color: $colorfondo;
+            margin-bottom: 1rem;
+            a{
+                width: 100%;
+            text-decoration: none; 
+            color: white;
+            background-color: $colorfondo
+            }
+        }    
+    }
+    div.seccionProductos{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background-color: #9E4A49;
+        border: solid #D9A6A5;
+        margin: 1rem;
+        padding: 0.5rem;
+        width: 70%;
+        text-align: center;
+        .tarjetas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            h3{
+                width: 100%;
+            }
+            .tarjetaProducto{
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                border: solid $colorfondo;
+                border-radius: 10%;
+                justify-content: center;
+                align-items: center;
+                padding: 0.5rem 0;
+                img{
+                    width: 10rem;
+                    border: $colorfondo;
+                    border-radius: 20%;
+                }
+                a{
+                    @include btn;
+                    transition: all 1s;
+                    &:hover{
+                        background-color: $colorfondo;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

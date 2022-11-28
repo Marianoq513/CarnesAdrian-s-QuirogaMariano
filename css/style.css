@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.contenedorPantalla{
+    display: grid;
+    background-color: #571110;
+    grid-template-areas: 
+    "nav nav nav"
+    "section section section"
+    "article article aside"
+    "footer footer footer";
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto
+}
+header{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background:linear-gradient(#9E4A49, #571110 );
+    color: white;
+    grid-area: header;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.navbar.navbar-expand-lg.bg-light{
+    display: flex;
+    justify-content: center;
+    padding: 2% 5%;
+}
+.navbar-nav{
+    display: flex;
+    gap: 20px;
+}
+nav.navbar{
+    background:linear-gradient(#9E4A49, #571110 );
+    color: white;
+    grid-area: nav;
+    display: grid;
+    align-items: flex-end;
+}
+nav.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav.navbar ul li a{
+    text-decoration: none;
+    background-color: #522626;
+    color: white;
+    padding: 2vh 2vw;
+    transition: all 1s;
+}
+nav.navbar ul li a:hover{
+    background-color: #D9A6A5;
+}
+.navegador{
+    background:linear-gradient(#9E4A49, #571110 );
+    color: white;
+    grid-area: nav;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+.navegador ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navegador ul li a{
+    text-decoration: none;
+    background-color: #522626;
+    color: white;
+    padding: 2vh 2vw;
+    transition: all 1s;
+}
+.navegador ul li a:hover{
+    background-color: #D9A6A5;
+}
+section{ 
+    background-image: url(../assets/img/principal.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-style: italic;
+    background-color:#571110 ;
+    color: white;
+    grid-area: section;
+    padding: 5% 0;
+}
+article{
+    background-color: #571110;
+    grid-area: article;
+}
+article .subtitulo{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin: 5px;
+    color: white;
+}
+aside{
+    background-color:#571110;
+    color: white;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1vh 0;
+}
+aside .video{
+    font-size:large;
+    text-decoration: underline;
+}
+aside .horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside .horarios h3 {
+    text-decoration: underline;
+    font-style: italic;
+}
+aside .pedidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside .pedidos h3{
+    text-decoration: underline;
+    font-style: italic;
+}
+footer{
+    background:linear-gradient(#571110, #9E4A49 );
+    color: white;
+    grid-area: footer;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.pieDePag{
+    width: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.navegador2 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navegador2 ul li a{
+    text-decoration: none;
+    background-color: #522626;
+    color: white;
+    border-radius: 20%;
+    transition: all 1s; 
+}
+.navegador2 ul li a:hover{
+    background-color: #D9A6A5;
+}
+.conozcanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactenos{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.contactenos ul{
+    list-style: none;
+}
+.contactenos ul li a {
+    text-decoration: none;
+}
+.familia{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    align-items: center;
+    text-align: center;
+}
+.familia .tituloFamilia{
+    color: #9E4A49;
+}
+.familia .subtituloFamilia{
+    text-decoration: underline;
+}
+.fotoLocales{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    margin: 5px;
+}
+.fotoLocales img:nth-child(1){
+ width: 100%;
+ grid-column: 1/4;
+}
+.fotoLocales img:nth-child(2){
+    width: 100%;
+    grid-row: 2/4;
+}
+article.carrusel{
+    margin-top: 20px;
+    width: 95vw;
+    height: auto;
+}
+@media (max-width: 844px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contenedorPantalla{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        font-size: x-small;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    article .ofertas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    article .ofertas .oferta{
+        width: 60%;
+    }
+    article .ofertas img{
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
+    section{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .pieDePag{
+        display: none;
+    }
+    footer .navegador2{
+        display: none;
+    }
+}
+

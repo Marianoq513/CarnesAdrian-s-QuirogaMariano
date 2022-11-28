@@ -1,0 +1,23 @@
+.carrusel{
+    width: 95%;
+    margin: 1rem auto;
+}
+.ubicaciones{
+    color: white;
+    text-align: center;
+}
+.carnicerias{
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    div{
+        width: 30%;
+        height: auto;
+        iframe{
+            width: 100%;
+        }
+    }
+}

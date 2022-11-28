@@ -1,0 +1,33 @@
+.familia{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    align-items: center;
+    text-align: center;
+  
+    .tituloFamilia{
+      color: white;
+     } 
+    .subtituloFamilia{
+      text-decoration: underline;
+      color: white;
+     } 
+     p{
+        color: white;
+     }
+}
+main{
+  h3{
+    text-align: center;
+    color: white;
+  }
+  width: 100vw;
+  .carousel{
+    width: 90%;
+    height: 30rem;
+    margin: auto;
+    img{
+      height: 30rem;
+    }
+  }
+}
