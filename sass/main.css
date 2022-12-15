@@ -301,6 +301,7 @@ article.productos {
 article.productos div.filtro {
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: white;
   background-color: #9E4A49;
   border: solid #D9A6A5;
@@ -312,6 +313,7 @@ article.productos div.filtro {
   position: -webkit-sticky;
   position: sticky;
   top: 1rem;
+  gap: 2rem;
 }
 article.productos div.filtro li {
   background-color: #571110;
@@ -322,6 +324,26 @@ article.productos div.filtro li a {
   text-decoration: none;
   color: white;
   background-color: #571110;
+}
+article.productos div.filtro .buscador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9E4A49;
+  border: solid #D9A6A5;
+  margin: 1rem;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+article.productos div.filtro .buscador h3 {
+  font-size: medium;
+}
+article.productos div.filtro .buscador .searchBar {
+  display: flex;
+  justify-content: space-around;
+}
+article.productos div.filtro .buscador .searchBar input {
+  width: 8rem;
 }
 article.productos div.seccionProductos {
   display: flex;
@@ -370,6 +392,20 @@ article.productos div.seccionProductos .tarjetas .tarjetaProducto a {
   transition: all 1s;
 }
 article.productos div.seccionProductos .tarjetas .tarjetaProducto a:hover {
+  background-color: #571110;
+  color: white;
+}
+article.productos div.seccionProductos .tarjetas .tarjetaProducto .buttonCompra {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: #D9A6A5;
+  border: solid #9E4A49;
+  text-decoration: none;
+  color: black;
+  z-index: 2;
+  transition: all 1s;
+}
+article.productos div.seccionProductos .tarjetas .tarjetaProducto .buttonCompra:hover {
   background-color: #571110;
   color: white;
 }
